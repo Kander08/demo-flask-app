@@ -9,7 +9,7 @@ def home():
     return jsonify({
         "message": "Hello from Flask in Kubernetes via ArgoCD",
         "hostname": socket.gethostname(),
-        "version": os.getenv("APP_VERSION", "1.0.1")
+        "version": os.getenv("APP_VERSION", "1.0.2")
     })
 
 @app.route("/health")
